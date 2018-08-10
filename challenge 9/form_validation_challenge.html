@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      p{
+        margin-left:10px;
+        margin-right: 15px;
+      }
+
+      .input {
+        width: 300px;
+      }
+
+      ::placeholder {
+        color: red;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <center>
+  <body>
+
+    <h1>Registration Form</h1>
+
+      <form class="Survey" action="form_validation_ch"  method="post">
+
+
+        <label>User id:</label>
+          <input class="input" type="name"  pattern=".{5,12}" required title="required and must be of length 5 to 12" placeholder="required and must be of length 5 to 12" name="username" required autofocus min="5" max="7">
+
+          <p>
+            <label> Password:</label>
+            <input class="input" type="password" pattern=".{7,12}" required title="required and must be of length 7 to 12" placeholder="required and must be of length 7 to 12" name="password" required min="7"max="12">
+          </p>
+
+          <p>
+            <label>Name:</label>
+            <input class="input" type="text" name="name" pattern="" required title="required and alphabets only." placeholder="required and alphabets only." name="name" required>
+          </p>
+
+          <p>
+            <label>Address:</label>
+            <input class="input" type="text" name="address" pattern="" required title="optional" placeholder="optional." name="address" required>
+          </p>
+
+    <p>
+      <label>Country:</label>
+      <select class="input" name="dropdown">
+        <option value="country" select>(Please select a category)</option>
+        <option value="country" select>South Africa</option>
+        <option value="county" select>South Korea</option>
+          <option value="country" select>Spain</option>
+        <option value="country" select>Sri Lanka</option>
+        <option value="country" select>Sudan</option>
+      </select>
+    </p>
+
+    <p>
+        <label>Zip code:</label>
+      <input class="input" type="text" name="zip code" pattern="" required title="required. must be numeric" placeholder="Required. Must be numeric." name="address"required>
+    </p>
+
+    <p>
+      <label>Email:</label>
+        <input class="input" type="email" name="email" pattern="" required title="required. must be valid email." placeholder="Required. Must be valid email."required>
+    </p>
+    <p>
+      <label>Sex:</label>
+      <input type="radio" name="gender" value="male"required> Male
+      <input type="radio" name="gender" value="female"required> Female
+     </p>
+
+      <p>
+        <lable>Language:</label>
+          <input type="radio" name="language" value="english">English
+          <input type="radio" name="language" value="non-english">Non-english
+     </p>
+
+     <p><label>Message:</label><br>
+     <textarea name="message" form="message">enter message here...</textarea>
+     </p>
+
+<input type="submit" name="" value="Submit">
+</form>
+</center>
+  </body>
+</html>
